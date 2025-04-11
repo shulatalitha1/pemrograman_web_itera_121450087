@@ -70,5 +70,4 @@ Berikut fitur ES6+ yang digunakan dalam pengembangan:
 ---
 
 ### 🖼️ Screenshot Aplikasi
-Contoh:
 ![Screenshot Dashboard](./screenshot(527).png)
