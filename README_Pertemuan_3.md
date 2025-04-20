@@ -41,7 +41,7 @@ Aplikasi manajemen buku sederhana berbasis React, yang memungkinkan pengguna unt
 
 ## 🖼️ Screenshot Antarmuka
 
-![Screenshot Home](./screenshots/home.png)  
+![Screenshot Home](./Screenshot_(571).png)  
 
 ---
 
@@ -75,7 +75,7 @@ useEffect(() => {
 
 ## ✅ Laporan Testing
 
-![Hasil Test](./screenshots/testing-result.png)
+![Hasil Test](./Screenshot_(566).png)
 
 - Semua unit test berhasil dijalankan ✅
 - Termasuk pengujian untuk komponen utama: `App`, `BookList`, `BookForm`
