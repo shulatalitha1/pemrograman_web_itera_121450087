@@ -1,0 +1,73 @@
+# matakuliah\_api
+
+API sederhana untuk mengelola data mata kuliah menggunakan Python dan Pyramid.
+
+## Fitur
+
+* CRUD data mata kuliah (kode, nama, SKS, semester)
+* Menggunakan SQLAlchemy + SQLite
+* Pyramid sebagai web framework
+* Jinja2 sebagai template engine
+* Debugging dengan Pyramid Debug Toolbar
+
+## Cara Instalasi dan Menjalankan
+
+### 1. Clone repo & masuk ke direktori
+
+```bash
+git clone https://github.com/username/matakuliah_api.git
+cd matakuliah_api
+```
+
+### 2. Buat dan aktifkan virtual environment
+
+```bash
+python -m venv env
+env\Scripts\activate  # Windows
+# source env/bin/activate  # Linux/macOS
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -e .[testing]
+```
+
+### 4. Inisialisasi database
+
+```bash
+initialize_matakuliah_api_db development.ini
+```
+
+### 5. Jalankan aplikasi
+
+```bash
+pserve development.ini --reload
+```
+
+Buka browser: [http://localhost:6543](http://localhost:6543)
+
+## Struktur Data
+
+Tabel `matakuliah`:
+
+| Kolom    | Tipe        | Keterangan           |
+| -------- | ----------- | -------------------- |
+| id       | Integer     | Primary Key          |
+| kode\_mk | String(10)  | Kode mata kuliah     |
+| nama\_mk | String(100) | Nama mata kuliah     |
+| sks      | Integer     | Jumlah SKS           |
+| semester | Integer     | Semester pengambilan |
+
+## Catatan
+
+* Secara default menggunakan SQLite (`matakuliah.db`)
+* Ubah konfigurasi database di `development.ini` jika ingin pakai PostgreSQL, dsb.
+
+## Testing
+
+```bash
+pytest
+```
+
+![Screenshot](Screenshot(662).png)
